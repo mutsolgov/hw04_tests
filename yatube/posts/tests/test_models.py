@@ -10,7 +10,7 @@ class PostModelTest(TestCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.user = User.objects.create_user(username='auth')
+        cls.user = User.objects.create_user(username='Новый пользователь!')
         cls.post = Post.objects.create(
             text='Здесь тестовый проверочный текст.',
             author=cls.user,
